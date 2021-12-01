@@ -1,4 +1,8 @@
 name: pantheon-upstream
 recipe: drupal9
+services:
+  elasticsearch:
+    type: elasticsearch:7
+    portforward: 9200
 config:
   webroot: web

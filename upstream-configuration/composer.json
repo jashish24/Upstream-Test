@@ -9,9 +9,46 @@
     ],
     "require": {
         "drush/drush": "^10.6",
-        "drupal/admin_toolbar": "^3.0"
+        "drupal/admin_toolbar": "^3.0",
+        "drupal/devel": "^4.1",
+        "drupal/devel_kint_extras": "^1.0",
+        "drupal/paragraphs": "^1.12",
+        "drupal/webform": "^6.1",
+        "drupal/ds": "^3.13",
+        "drupal/typed_data": "^1.0@beta",
+        "drupal/graphql": "^4.2",
+        "drupal/pathauto": "^1.8",
+        "drupal/google_analytics": "^4.0",
+        "drupal/config_split": "^1.7",
+        "drupal/config_ignore": "^2.3",
+        "drupal/config_readonly": "^1.0@beta",
+        "drupal/rabbit_hole": "^1.0@beta",
+        "drupal/field_group": "^3.2",
+        "drupal/redirect": "^1.6",
+        "drupal/advagg": "^4.1",
+        "drupal/twig_tweak": "^3.1",
+        "drupal/coffee": "^1.2",
+        "drupal/viewfield": "^3.0@beta",
+        "drupal/block_field": "^1.0@RC",
+        "drupal/search_api": "^1.21",
+        "drupal/search_api_page": "^1.0@beta",
+        "drupal/elasticsearch_connector": "^7.0@alpha",
+        "drupal/commerce": "^2.28",
+        "drupal/entity_browser": "^2.6",
+        "drupal/entity_usage": "^2.0@beta"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "extra": {
-        "_README": "To make a custom upstream, clone this repository and add any dependencies to be provided by this upstream to this composer.json file. Leave the root-level composer.json file for the exclusive use of each individual site; do not modify it after your custom upstream has been published. See https://pantheon.io/docs/create-custom-upstream for more information."
+        "_README": "To make a custom upstream, clone this repository and add any dependencies to be provided by this upstream to this composer.json file. Leave the root-level composer.json file for the exclusive use of each individual site; do not modify it after your custom upstream has been published. See https://pantheon.io/docs/create-custom-upstream for more information.",
+        "patches": {
+          "drupal/elasticsearch_connector": {
+              "Cannot load the Elasticsearch cluster for your index": "https://www.drupal.org/files/issues/2021-12-01/cannot-load-cluster-exception-2850749-10.patch",
+              "Getting incorrect results for small keyword due to fuzziness": "https://www.drupal.org/files/issues/2021-09-13/incorrect-fuzziness-issue-3225054-3.patch"
+          },
+          "drupal/search_api_page": {
+            "Conjunction selection with Parse Mode 'Multiple Words (terms)' is not possible": "https://www.drupal.org/files/issues/2021-03-24/search_api_page-3108496-5.patch"
+          }
+        }
     }
 }
