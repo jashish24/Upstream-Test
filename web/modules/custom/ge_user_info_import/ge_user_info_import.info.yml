@@ -1,0 +1,7 @@
+name: User Info Migration
+core: 8.x
+type: module
+core_version_requirement: ^8 || ^9
+description: Imports user info from csv
+dependencies:
+  - drupal:migrate_source_csv

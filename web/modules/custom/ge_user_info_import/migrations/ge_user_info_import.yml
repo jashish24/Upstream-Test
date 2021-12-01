@@ -1,0 +1,29 @@
+id: ge_user_info_import
+label: Import User Info
+migration_groups: ge_info
+source:
+  plugin: csv
+  # Full path to the file.
+  path: 'modules/custom/ge_user_info_import/assets/user_info.csv'
+  # Column delimiter. Comma (,) by default.
+  delimiter: ','
+  # Field enclosure. Double quotation marks (") by default.
+  enclosure: '"'
+  # The number of rows at the beginning whichare not data.
+  header_row_count: 1
+  ids:
+    [info_id]
+  column_names:
+    0:
+      info_id: 'Unique Id'
+    1:
+      first_name: 'First Name'
+    2:
+      last_name: 'Last Name'
+process:
+  info_id: info_id
+  first_name: first_name
+  last_name: last_name
+
+destination:
+  plugin: 'ge_user_info'
