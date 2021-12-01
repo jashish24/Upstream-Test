@@ -1,0 +1,19 @@
+uuid: c3178813-d512-4f49-af07-afddbf6934d2
+langcode: en
+status: '1'
+dependencies: {  }
+cluster_id: elastic_server_1
+name: 'Elastic Server 1'
+url: 'http://elasticsearch:9200'
+options:
+  multiple_nodes_connection: false
+  use_authentication: 0
+  authentication_type: Basic
+  username: ''
+  password: ''
+  timeout: '3'
+  rewrite:
+    rewrite_index: 0
+    index:
+      prefix: ''
+      suffix: ''

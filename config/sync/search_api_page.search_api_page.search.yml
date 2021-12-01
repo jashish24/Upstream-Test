@@ -1,0 +1,24 @@
+uuid: d82960fa-a3d6-49a4-8d4a-d78d5c95de39
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.search_index_1
+id: search
+label: Search
+path: search
+clean_url: true
+show_all_when_no_keys: false
+index: search_index_1
+limit: 10
+searched_fields:
+  body: body
+style: view_modes
+view_mode_configuration:
+  'entity:node':
+    default: default
+    overrides:
+      article: ''
+      page: ''
+show_search_form: true
+parse_mode: terms
