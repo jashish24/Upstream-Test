@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a57921e1c72ea68170a235a58ad3b82c",
+    "content-hash": "10ca3b1b4adae5ce3ffd398fc8c246b4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3986,6 +3986,58 @@
             }
         },
         {
+            "name": "drupal/migrate_source_csv",
+            "version": "3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/migrate_source_csv.git",
+                "reference": "8.x-3.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/migrate_source_csv-8.x-3.4.zip",
+                "reference": "8.x-3.4",
+                "shasum": "12990ad8c3b99e16c1b2a1be955aaa28581e5d1c"
+            },
+            "require": {
+                "drupal/core": "^8.7 || ^9.0",
+                "league/csv": "^9.1",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "drupal/migrate_plus": "5.x-dev"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.4",
+                    "datestamp": "1588260548",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Lucas Hedding",
+                    "homepage": "https://www.drupal.org/u/heddn",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "CSV source migration.",
+            "homepage": "https://www.drupal.org/project/migrate_source_csv",
+            "support": {
+                "source": "https://cgit.drupalcode.org/migrate_source_csv",
+                "issues": "https://www.drupal.org/project/issues/migrate_source_csv",
+                "irc": "irc://irc.freenode.org/drupal-migrate"
+            }
+        },
+        {
             "name": "drupal/paragraphs",
             "version": "1.12.0",
             "source": {
@@ -4782,17 +4834,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "6.1.0",
+            "version": "6.1.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "6.1.0"
+                "reference": "6.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-6.1.0.zip",
-                "reference": "6.1.0",
-                "shasum": "0dae48cc100133a4144ca8219d5506b917888588"
+                "url": "https://ftp.drupal.org/files/projects/webform-6.1.1.zip",
+                "reference": "6.1.1",
+                "shasum": "0d3c619a165f4a84b5cced8aa35c54e1296df22e"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -4840,8 +4892,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "6.1.0",
-                    "datestamp": "1635676666",
+                    "version": "6.1.1",
+                    "datestamp": "1638398898",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6169,6 +6221,90 @@
             "time": "2021-07-09T08:23:52+00:00"
         },
         {
+            "name": "league/csv",
+            "version": "9.7.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/csv.git",
+                "reference": "002f55f649e7511710dc7154ff44c7be32c8195c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/csv/zipball/002f55f649e7511710dc7154ff44c7be32c8195c",
+                "reference": "002f55f649e7511710dc7154ff44c7be32c8195c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "ext-dom": "*",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "phpstan/phpstan": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0.0",
+                "phpstan/phpstan-strict-rules": "^1.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "suggest": {
+                "ext-dom": "Required to use the XMLConverter and or the HTMLConverter classes",
+                "ext-iconv": "Needed to ease transcoding CSV using iconv stream filters"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "9.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Csv\\": "src"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ignace Nyamagana Butera",
+                    "email": "nyamsprod@gmail.com",
+                    "homepage": "https://github.com/nyamsprod/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CSV data manipulation made easy in PHP",
+            "homepage": "http://csv.thephpleague.com",
+            "keywords": [
+                "convert",
+                "csv",
+                "export",
+                "filter",
+                "import",
+                "read",
+                "transform",
+                "write"
+            ],
+            "support": {
+                "docs": "https://csv.thephpleague.com",
+                "issues": "https://github.com/thephpleague/csv/issues",
+                "rss": "https://github.com/thephpleague/csv/releases.atom",
+                "source": "https://github.com/thephpleague/csv"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/nyamsprod",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-11-30T07:09:34+00:00"
+        },
+        {
             "name": "makinacorpus/php-lucene",
             "version": "1.0.4",
             "source": {
@@ -6506,15 +6642,50 @@
             "dist": {
                 "type": "path",
                 "url": "upstream-configuration",
-                "reference": "48c8e013d3ccf2a6f74ebe16846d70eb0bcbf64b"
+                "reference": "dfc56f1af453c7227a271de9ce0264f2975ccf78"
             },
             "require": {
                 "drupal/admin_toolbar": "^3.0",
+                "drupal/advagg": "^4.1",
+                "drupal/block_field": "^1.0@RC",
+                "drupal/coffee": "^1.2",
+                "drupal/commerce": "^2.28",
+                "drupal/config_ignore": "^2.3",
+                "drupal/config_readonly": "^1.0@beta",
+                "drupal/config_split": "^1.7",
+                "drupal/devel": "^4.1",
+                "drupal/devel_kint_extras": "^1.0",
+                "drupal/ds": "^3.13",
+                "drupal/elasticsearch_connector": "^7.0@alpha",
+                "drupal/entity_browser": "^2.6",
+                "drupal/entity_usage": "^2.0@beta",
+                "drupal/field_group": "^3.2",
+                "drupal/google_analytics": "^4.0",
+                "drupal/graphql": "^4.2",
+                "drupal/paragraphs": "^1.12",
+                "drupal/pathauto": "^1.8",
+                "drupal/rabbit_hole": "^1.0@beta",
+                "drupal/redirect": "^1.6",
+                "drupal/search_api": "^1.21",
+                "drupal/search_api_page": "^1.0@beta",
+                "drupal/twig_tweak": "^3.1",
+                "drupal/typed_data": "^1.0@beta",
+                "drupal/viewfield": "^3.0@beta",
+                "drupal/webform": "^6.1",
                 "drush/drush": "^10.6"
             },
             "type": "project",
             "extra": {
-                "_README": "To make a custom upstream, clone this repository and add any dependencies to be provided by this upstream to this composer.json file. Leave the root-level composer.json file for the exclusive use of each individual site; do not modify it after your custom upstream has been published. See https://pantheon.io/docs/create-custom-upstream for more information."
+                "_README": "To make a custom upstream, clone this repository and add any dependencies to be provided by this upstream to this composer.json file. Leave the root-level composer.json file for the exclusive use of each individual site; do not modify it after your custom upstream has been published. See https://pantheon.io/docs/create-custom-upstream for more information.",
+                "patches": {
+                    "drupal/elasticsearch_connector": {
+                        "Cannot load the Elasticsearch cluster for your index": "https://www.drupal.org/files/issues/2021-12-01/cannot-load-cluster-exception-2850749-10.patch",
+                        "Getting incorrect results for small keyword due to fuzziness": "https://www.drupal.org/files/issues/2021-09-13/incorrect-fuzziness-issue-3225054-3.patch"
+                    },
+                    "drupal/search_api_page": {
+                        "Conjunction selection with Parse Mode 'Multiple Words (terms)' is not possible": "https://www.drupal.org/files/issues/2021-03-24/search_api_page-3108496-5.patch"
+                    }
+                }
             },
             "transport-options": {
                 "relative": true
@@ -7188,12 +7359,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruflin/Elastica.git",
-                "reference": "8423c31007f07d5fbc38a627332dbd20f20a5d85"
+                "reference": "e4e63fc18cae23dfef43d57c75b3595f0aaf7c2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruflin/Elastica/zipball/8423c31007f07d5fbc38a627332dbd20f20a5d85",
-                "reference": "8423c31007f07d5fbc38a627332dbd20f20a5d85",
+                "url": "https://api.github.com/repos/ruflin/Elastica/zipball/e4e63fc18cae23dfef43d57c75b3595f0aaf7c2a",
+                "reference": "e4e63fc18cae23dfef43d57c75b3595f0aaf7c2a",
                 "shasum": ""
             },
             "require": {
@@ -7249,7 +7420,7 @@
                 "issues": "https://github.com/ruflin/Elastica/issues",
                 "source": "https://github.com/ruflin/Elastica/tree/master"
             },
-            "time": "2021-11-29T11:52:49+00:00"
+            "time": "2021-12-03T08:48:44+00:00"
         },
         {
             "name": "stack/builder",
@@ -11805,16 +11976,16 @@
         },
         {
             "name": "phpunit/php-file-iterator",
-            "version": "3.0.5",
+            "version": "3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
-                "reference": "aa4be8575f26070b100fccb67faabb28f21f66f8"
+                "reference": "cf1c2e7c203ac650e352f4cc675a7021e7d1b3cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/aa4be8575f26070b100fccb67faabb28f21f66f8",
-                "reference": "aa4be8575f26070b100fccb67faabb28f21f66f8",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/cf1c2e7c203ac650e352f4cc675a7021e7d1b3cf",
+                "reference": "cf1c2e7c203ac650e352f4cc675a7021e7d1b3cf",
                 "shasum": ""
             },
             "require": {
@@ -11853,7 +12024,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-file-iterator/issues",
-                "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/3.0.5"
+                "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/3.0.6"
             },
             "funding": [
                 {
@@ -11861,7 +12032,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-28T05:57:25+00:00"
+            "time": "2021-12-02T12:48:52+00:00"
         },
         {
             "name": "phpunit/php-invoker",

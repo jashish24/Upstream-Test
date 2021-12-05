@@ -35,6 +35,7 @@
         "drupal/field_group": "^3.2",
         "drupal/google_analytics": "^4.0",
         "drupal/graphql": "^4.2",
+        "drupal/migrate_source_csv": "^3.4",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
         "drupal/rabbit_hole": "^1.0@beta",
@@ -78,6 +79,9 @@
           },
           "drupal/search_api_page": {
             "Conjunction selection with Parse Mode 'Multiple Words (terms)' is not possible": "https://www.drupal.org/files/issues/2021-03-24/search_api_page-3108496-5.patch"
+          },
+          "drupal/devel_kint_extras": {
+            "No extras showing for me": "https://www.drupal.org/files/issues/2021-12-03/no-extras-showing-3193458-15.patch"
           }
         },
         "installer-paths": {

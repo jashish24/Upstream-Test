@@ -1,7 +1,9 @@
 module:
+  devel_kint_extras: -1
   admin_toolbar: 0
   admin_toolbar_search: 0
   admin_toolbar_tools: 0
+  ajax_submit: 0
   automated_cron: 0
   big_pipe: 0
   block: 0
@@ -17,7 +19,6 @@ module:
   datetime: 0
   dblog: 0
   devel: 0
-  devel_kint_extras: 0
   ds_switch_view_mode: 0
   dynamic_page_cache: 0
   editor: 0
@@ -28,6 +29,7 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  ge_user_info_import: 0
   graphql: 0
   help: 0
   history: 0
@@ -37,6 +39,8 @@ module:
   link: 0
   menu_link_content: 0
   menu_ui: 0
+  migrate: 0
+  migrate_source_csv: 0
   node: 0
   options: 0
   page_cache: 0
