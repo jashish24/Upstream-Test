@@ -1,0 +1,22 @@
+uuid: 411767aa-ee4d-4c6f-b92a-97a723aaf8e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - prahub_bootstrap
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: prahub_bootstrap_content
+theme: prahub_bootstrap
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

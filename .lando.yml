@@ -1,8 +1,15 @@
 name: pantheon-upstream
 recipe: drupal9
 services:
+  mailhog:
+    type: mailhog
+    portforward: true
   elasticsearch:
     type: elasticsearch:7
     portforward: 9200
+  phpmyadmin:
+    type: phpmyadmin
+    hosts:
+      - database
 config:
   webroot: web

@@ -1,0 +1,8 @@
+uuid: 46bad926-1a95-4eab-a4ef-bc3613bd31ce
+langcode: en
+status: true
+dependencies: {  }
+id: user-details
+label: 'User Details'
+description: 'User Details'
+locked: false

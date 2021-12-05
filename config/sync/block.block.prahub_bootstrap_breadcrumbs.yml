@@ -1,0 +1,22 @@
+uuid: cee6c674-dead-4813-87c5-5826c3a7eb34
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - prahub_bootstrap
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: prahub_bootstrap_breadcrumbs
+theme: prahub_bootstrap
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

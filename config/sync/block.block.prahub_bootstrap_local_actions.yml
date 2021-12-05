@@ -1,0 +1,20 @@
+uuid: ae2ecd6c-b834-41bb-8a26-56557762de5b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - prahub_bootstrap
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: prahub_bootstrap_local_actions
+theme: prahub_bootstrap
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

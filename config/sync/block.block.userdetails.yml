@@ -1,0 +1,33 @@
+uuid: ce2c8f53-2551-4914-95f1-1c6e134a122c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.user-details
+  module:
+    - block_classes
+    - system
+  theme:
+    - prahub_bootstrap
+third_party_settings:
+  block_classes:
+    block_class: 'collapse navbar-collapse navbarSupportedContent'
+id: userdetails
+theme: prahub_bootstrap
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:user-details'
+settings:
+  id: 'system_menu_block:user-details'
+  label: 'User Details'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: false
