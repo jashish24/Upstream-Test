@@ -39,6 +39,8 @@
         "drupal/field_group": "^3.2",
         "drupal/google_analytics": "^4.0",
         "drupal/graphql": "^4.2",
+        "drupal/htmlmail": "^3.0@alpha",
+        "drupal/linkit": "^6.0@beta",
         "drupal/menus_attribute": "^1.2",
         "drupal/migrate_source_csv": "^3.4",
         "drupal/page_specific_class": "^2.0",
@@ -84,6 +86,9 @@
           "drupal/elasticsearch_connector": {
               "Cannot load the Elasticsearch cluster for your index": "https://www.drupal.org/files/issues/2021-12-01/cannot-load-cluster-exception-2850749-10.patch",
               "Getting incorrect results for small keyword due to fuzziness": "https://www.drupal.org/files/issues/2021-09-13/incorrect-fuzziness-issue-3225054-3.patch"
+          },
+          "drupal/linkit": {
+            "Link shown after the autocomplete selection is the bare node/xxx link, not the alias": "https://www.drupal.org/files/issues/2021-11-05/2877535-34.patch"
           },
           "drupal/search_api_page": {
             "Conjunction selection with Parse Mode 'Multiple Words (terms)' is not possible": "https://www.drupal.org/files/issues/2021-03-24/search_api_page-3108496-5.patch"

@@ -55,7 +55,7 @@ tracker_settings:
   default:
     indexing_order: fifo
 options:
+  cron_limit: 50
   index_directly: true
   track_changes_in_references: true
-  cron_limit: 50
 server: elastic_search_server

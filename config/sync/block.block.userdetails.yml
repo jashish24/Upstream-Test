@@ -21,13 +21,13 @@ plugin: 'system_menu_block:user-details'
 settings:
   id: 'system_menu_block:user-details'
   label: 'User Details'
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   request_path:
     id: request_path
-    pages: '/user/*'
     negate: false
+    pages: '/user/*'

@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   devel_kint_extras: -1
   admin_toolbar: 0
@@ -36,10 +38,13 @@ module:
   graphql: 0
   help: 0
   history: 0
+  htmlmail: 0
   image: 0
   jsonapi: 0
   layout_discovery: 0
   link: 0
+  linkit: 0
+  mailsystem: 0
   menu_link_content: 0
   menu_ui: 0
   menus_attribute: 0
@@ -82,5 +87,3 @@ theme:
   bootstrap_sass: 0
   prahub_bootstrap: 0
 profile: standard
-_core:
-  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
